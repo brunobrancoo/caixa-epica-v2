@@ -37,7 +37,7 @@ export default function Sorteio() {
                       width={305}
                       height={227}
                       alt="Caixa Épica Logo"
-                      className="w-40 h-auto md:min-w-[200px]"
+                      className="w-40 h-auto md:min-w-[120px]"
                     />
                     <div className="hidden h-24 border-l-4 border-l-[#FFB548]/80 md:block" />
                     <h1 className="font-bebas text-5xl font-bold tracking-wide md:text-6xl lg:text-6xl w-full">
