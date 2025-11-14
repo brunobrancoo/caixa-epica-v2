@@ -44,7 +44,7 @@ export default function RaffleRulesModal() {
             Datas dos Sorteios
           </h2>
           <p>
-            As datas serão divulgadas no Instagram oficial{" "}
+            11, 12, 13, 14 e 15 de dezembro.{" "}
             <a
               href="https://www.instagram.com/caixaepica"
               target="_blank"
