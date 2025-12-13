@@ -3,8 +3,10 @@ import SecondSession from "@/components/second-session";
 import FireForge from "../components/fire-forge";
 import FirstSession from "@/components/first-session";
 import ThirdSession from "@/components/third-session";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
+  redirect("/sorteio");
   return (
     <main className="flex flex-col min-h-screen text-[0]">
       <FirstSession />
