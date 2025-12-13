@@ -1,48 +1,17 @@
 "use server";
-import Image from "next/image";
+import SecondSession from "@/components/second-session";
 import FireForge from "../components/fire-forge";
-import { Card, CardContent } from "@/components/ui/card";
-import { redirect } from "next/navigation";
+import FirstSession from "@/components/first-session";
+import ThirdSession from "@/components/third-session";
 
 export default async function Home() {
-  redirect("/sorteio");
   return (
     <main className="flex flex-col min-h-screen text-[0]">
-      <div className="relative w-full h-[1024px] bg-cover bg-center bg-[url(/bg-1.jpg)]">
-        <div className="absolute inset-0  bg-gradient-to-b from-transparent via-gray-950 to-black md:bg-gradient-to-r md:from-transparent md:via-black/60 md:to-black" />
+      <FirstSession />
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full p-4 md:flex-row md:items-start md:justify-between md:px-8 lg:px-20">
-          <div className="flex flex-col items-center text-center md:items-start md:text-left md:mt-20">
-            <div className="absolute left-0 top-0 hidden md:block h-full w-0 shadow-[100px_0px_300px_100px_rgba(56,42,21,0.4)] z-10" />
+      <SecondSession />
 
-            <Image
-              src={"/logo.png"}
-              width={305}
-              height={227}
-              alt="logo"
-              className="w-40 h-auto md:w-[305px] md:h-[227px] mt-8 md:mt-0"
-            />
-
-            <div className="flex flex-col items-center md:items-start w-full max-w-md mt-4">
-              <p className="text-base text-[#FEB546] font-bebas font-bold tracking-wide md:text-2xl">
-                PARTICIPE
-              </p>
-              <p className="text-3xl text-white font-bebas font-bold leading-tight md:text-5xl lg:text-7xl mt-2 md:mt-4">
-                DO NOSSO SORTEIO DE MINIATURAS
-              </p>
-              <div className="border-b-[#FFB548] border-b-4 w-16 md:w-24 h-[6px] mx-auto mt-2 md:mx-0" />
-            </div>
-          </div>
-
-          <Image
-            src={"/asset-1.png"}
-            width={700}
-            height={700}
-            alt="asset"
-            className="mt-8 brightness-50 md:w-[700px] w-[200px]"
-          />
-        </div>
-      </div>
+      <ThirdSession />
       {/*       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center p-4"></footer> */}
       <FireForge />
     </main>

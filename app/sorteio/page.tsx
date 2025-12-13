@@ -46,7 +46,7 @@ export default function Sorteio() {
                       <span className="text-white">SORTEIO DE MINIATURAS</span>
                       <br />
                       <span className="text-[#FEB546] text-4xl">
-                        DE 11 A 15 DE DEZEMBRO!
+                        DE 06 A 10 DE DEZEMBRO!
                       </span>
                     </h1>
                   </div>
